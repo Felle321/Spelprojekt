@@ -1,0 +1,36 @@
+D:\Dropbox\Skit\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Content\fontDebug.xnb
+D:\Dropbox\Skit\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Content\FontDamage.xnb
+D:\Dropbox\Skit\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\GymnasieArbete.exe
+D:\Dropbox\Skit\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\GymnasieArbete.pdb
+D:\Dropbox\Skit\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.dll
+D:\Dropbox\Skit\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.Game.dll
+D:\Dropbox\Skit\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.GamerServices.dll
+D:\Dropbox\Skit\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.Graphics.dll
+D:\Dropbox\Skit\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.Input.Touch.dll
+D:\Dropbox\Skit\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.xml
+D:\Dropbox\Skit\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.Game.xml
+D:\Dropbox\Skit\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.Graphics.xml
+D:\Dropbox\Skit\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.GamerServices.xml
+D:\Dropbox\Skit\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.Input.Touch.xml
+D:\Dropbox\Skit\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\Dropbox\Skit\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\obj\x86\Release\GymnasieArbete.exe
+D:\Dropbox\Skit\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\obj\x86\Release\GymnasieArbete.pdb
+D:\Dropbox\Skit\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\obj\x86\Release\GymnasieArbete.csprojResolveAssemblyReference.cache
+C:\Users\Rau\Dropbox\Gymnasie Arbete\Programmering\Rau\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Content\fontDebug.xnb
+C:\Users\Rau\Dropbox\Gymnasie Arbete\Programmering\Rau\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Content\FontDamage.xnb
+C:\Users\Rau\Dropbox\Gymnasie Arbete\Programmering\Rau\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\GymnasieArbete.exe
+C:\Users\Rau\Dropbox\Gymnasie Arbete\Programmering\Rau\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\GymnasieArbete.pdb
+C:\Users\Rau\Dropbox\Gymnasie Arbete\Programmering\Rau\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.dll
+C:\Users\Rau\Dropbox\Gymnasie Arbete\Programmering\Rau\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.Game.dll
+C:\Users\Rau\Dropbox\Gymnasie Arbete\Programmering\Rau\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.GamerServices.dll
+C:\Users\Rau\Dropbox\Gymnasie Arbete\Programmering\Rau\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\Rau\Dropbox\Gymnasie Arbete\Programmering\Rau\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.Input.Touch.dll
+C:\Users\Rau\Dropbox\Gymnasie Arbete\Programmering\Rau\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.xml
+C:\Users\Rau\Dropbox\Gymnasie Arbete\Programmering\Rau\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.Game.xml
+C:\Users\Rau\Dropbox\Gymnasie Arbete\Programmering\Rau\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.Graphics.xml
+C:\Users\Rau\Dropbox\Gymnasie Arbete\Programmering\Rau\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.GamerServices.xml
+C:\Users\Rau\Dropbox\Gymnasie Arbete\Programmering\Rau\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.Input.Touch.xml
+C:\Users\Rau\Dropbox\Gymnasie Arbete\Programmering\Rau\GymnasieArbete\GymnasieArbete\GymnasieArbete\obj\x86\Release\GymnasieArbete.csprojResolveAssemblyReference.cache
+C:\Users\Rau\Dropbox\Gymnasie Arbete\Programmering\Rau\GymnasieArbete\GymnasieArbete\GymnasieArbete\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Rau\Dropbox\Gymnasie Arbete\Programmering\Rau\GymnasieArbete\GymnasieArbete\GymnasieArbete\obj\x86\Release\GymnasieArbete.exe
+C:\Users\Rau\Dropbox\Gymnasie Arbete\Programmering\Rau\GymnasieArbete\GymnasieArbete\GymnasieArbete\obj\x86\Release\GymnasieArbete.pdb

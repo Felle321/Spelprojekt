@@ -1,0 +1,2 @@
+Content\fontDebug.xnb
+Content\FontDamage.xnb

@@ -1,0 +1,2 @@
+C:\Users\felix.dunmar\Dropbox\Skit\Rau\Programmering\Felix\ShadersMan\ShadersMan\ShadersManContent\obj\x86\Debug\ShadersManContent.contentprojResolveAssemblyReference.cache
+D:\Dropbox\Skit\Rau\Programmering\Felix\ShadersMan\ShadersMan\ShadersManContent\obj\x86\Debug\ShadersManContent.contentprojResolveAssemblyReference.cache
