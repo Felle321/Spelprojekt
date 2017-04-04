@@ -1,0 +1,17 @@
+C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Content\fontDebug.xnb
+C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Content\fontDamage.xnb
+C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\GymnasieArbete.exe
+C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\GymnasieArbete.pdb
+C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.dll
+C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.Game.dll
+C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.GamerServices.dll
+C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.Input.Touch.dll
+C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.xml
+C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.Game.xml
+C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.Graphics.xml
+C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.GamerServices.xml
+C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Release\Microsoft.Xna.Framework.Input.Touch.xml
+C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\obj\x86\Release\GymnasieArbete.exe
+C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\obj\x86\Release\GymnasieArbete.pdb

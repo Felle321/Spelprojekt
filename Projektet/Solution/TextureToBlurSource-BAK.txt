@@ -1,0 +1,107 @@
+float4x4 World;
+float4x4 View;
+float4x4 Projection;
+float movX, movY, w, h, k;
+
+sampler s0;
+
+struct VertexShaderInput
+{
+	float4 Position : POSITION;
+};
+
+struct VertexShaderOutput
+{
+	float4 Position : POSITION0;
+};
+
+VertexShaderOutput VertexShaderFunction(VertexShaderInput input)
+{
+    VertexShaderOutput output;
+
+    float4 worldPosition = mul(input.Position, World);
+    float4 viewPosition = mul(worldPosition, View);
+    output.Position = mul(viewPosition, Projection);
+
+
+    return output;
+}
+
+float4 PixelShaderFunction(float2 coords : TEXCOORD0) : COLOR0
+{
+	float4 color = float4(1.0f, 1.0f, 1.0f, 1.0f);
+	float2 newCoords = float2(-1, -1);
+	float offsetX, offsetY;
+	float alpha = 1;
+
+	if (movX < 0)
+	{
+		offsetX = 0;
+	}
+	else
+	{
+		offsetX = movX;
+	}
+
+	if (movY < 0)
+	{
+		offsetY = 0;
+	}
+	else
+	{
+		offsetY = movY;
+	}
+
+	bool inBoxX, inBoxY;
+	inBoxX = (coords.x >= offsetX && coords.x <= offsetX + w);
+	inBoxY = (coords.y >= offsetY && coords.y <= offsetY + h);
+
+	if (inBoxX && inBoxY)
+	{
+		newCoords.x = (coords.x - offsetX) / w;
+		newCoords.y = (coords.y - offsetY) / h;
+	}
+	else if(k > 0)
+	{
+		if (coords.y > coords.x * k && coords.y < (coords.x * k + h))
+		{
+			newCoords.x = coords.x;
+			newCoords.y = (coords.y - (coords.x * k)) / h;
+			alpha *= coords.y;
+		}
+		else if (coords.y < coords.x * k && coords.y > (coords.x * k - w * k))
+		{
+			newCoords.x = coords.x;
+			newCoords.y = (coords.y - (coords.x * k)) / h;
+			alpha *= coords.x;
+		}
+	}
+	else
+	{
+		if (coords.y < coords.x * k + h + offsetY - w * k && coords.y > coords.x * k - k)
+		{
+			newCoords.x = coords.x;
+			newCoords.y = (coords.y - coords.x * k - k) / h;
+			alpha *= 1 - coords.x;
+		}
+		else if (coords.y < coords.x * k - k && coords.y > coords.x * k + movY)
+		{
+			newCoords.x = coords.x;
+			newCoords.y = (coords.y - coords.x * k - k) / h;
+			alpha *= coords.y;
+		}
+	}
+
+	if (newCoords.x != -1 && newCoords.y != -1)
+		color = tex2D(s0, newCoords) * alpha;
+
+    return color;
+}
+
+technique Technique1
+{
+    pass Pass1
+    {
+        PixelShader = compile ps_2_0 PixelShaderFunction();
+    }
+}

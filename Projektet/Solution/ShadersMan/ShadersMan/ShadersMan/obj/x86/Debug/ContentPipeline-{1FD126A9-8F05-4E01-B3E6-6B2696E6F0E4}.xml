@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>GaussianBlur.fx</Source>
+      <Name>GaussianBlur</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\felix.dunmar\Dropbox\Skit\Rau\Programmering\Felix\ShadersMan\ShadersMan\ShadersMan\bin\x86\Debug\Content\GaussianBlur.xnb</Output>
+      <Time>2016-11-29T13:45:10.0910674+01:00</Time>
+    </Item>
+    <Item>
+      <Source>TextureToBlurSource.fx</Source>
+      <Name>TextureToBlurSource</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\felix.dunmar\Dropbox\Skit\Rau\Programmering\Felix\ShadersMan\ShadersMan\ShadersMan\bin\x86\Debug\Content\TextureToBlurSource.xnb</Output>
+      <Time>2016-12-10T16:28:41.7646434+01:00</Time>
+    </Item>
+    <Item>
+      <Source>cats.png</Source>
+      <Name>cats</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\felix.dunmar\Dropbox\Skit\Rau\Programmering\Felix\ShadersMan\ShadersMan\ShadersMan\bin\x86\Debug\Content\cats.xnb</Output>
+      <Time>2016-11-20T01:23:16.4062269+01:00</Time>
+    </Item>
+    <Item>
+      <Source>ball.png</Source>
+      <Name>ball</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\felix.dunmar\Dropbox\Skit\Rau\Programmering\Felix\ShadersMan\ShadersMan\ShadersMan\bin\x86\Debug\Content\ball.xnb</Output>
+      <Time>2016-11-20T10:57:56.0330253+01:00</Time>
+    </Item>
+    <Item>
+      <Source>CombineTexturesDepth.fx</Source>
+      <Name>CombineTexturesDepth</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\felix.dunmar\Dropbox\Skit\Rau\Programmering\Felix\ShadersMan\ShadersMan\ShadersMan\bin\x86\Debug\Content\CombineTexturesDepth.xnb</Output>
+      <Time>2016-12-01T13:35:15.0984151+01:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{1FD126A9-8F05-4E01-B3E6-6B2696E6F0E4}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\felix.dunmar\Dropbox\Skit\Rau\Programmering\Felix\ShadersMan\ShadersMan\ShadersManContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\felix.dunmar\Dropbox\Skit\Rau\Programmering\Felix\ShadersMan\ShadersMan\ShadersMan\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\felix.dunmar\Dropbox\Skit\Rau\Programmering\Felix\ShadersMan\ShadersMan\ShadersMan\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\felix.dunmar\Dropbox\Skit\Rau\Programmering\Felix\ShadersMan\ShadersMan\ShadersMan\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2016-10-04T09:39:29.1702573+02:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
