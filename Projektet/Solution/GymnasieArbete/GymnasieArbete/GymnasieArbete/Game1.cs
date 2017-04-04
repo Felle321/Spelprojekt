@@ -52,9 +52,7 @@ namespace GymnasieArbete
         public bool doorInteraction = false;
 
         //REASS
-
-            //TJO
-
+        
         //Overlay (Getting hurt etc)
         public List<Overlay> overlays = new List<Overlay>();
 
