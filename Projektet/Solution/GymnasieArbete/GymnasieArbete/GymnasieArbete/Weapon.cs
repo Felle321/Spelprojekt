@@ -112,6 +112,25 @@ namespace GymnasieArbete
         /// </summary>
         public int ExperienceCap { get; set; }
 
+        public void ShootParticleStatic(Random rand, Room room, Vector2 position, float angle, float spread, float power, Vector2 deacceleration, Vector2 scale, int amount, int duration, Color color)
+        {
+            for (int i = 0; i < amount; i++)
+            {
+                int random = rand.Next((int)-spread, (int)spread);
+                Particle.Static particle = new Particle.Static(room.particles.Count, "pixel", rand, position, new Vector2((float)Math.Cos(MathHelper.ToRadians(angle) - MathHelper.ToRadians(random)) * power, (float)Math.Sin(MathHelper.ToRadians(angle) - MathHelper.ToRadians(random)) * power), deacceleration, scale, 0.1f, duration, color);
+                room.particles.Add(particle);
+            }
+        }
+        public void ShootParticleDynamic(Random rand, Room room, Vector2 position, Vector2 movement, Vector2 deacceleration, Vector2 scale, string spriteKey, bool pixel, int amount, int duration, Color color)
+        {
+            for (int i = 0; i < amount; i++)
+            {
+
+                Particle.Dynamic particle = new Particle.Dynamic(new Rectangle((int)position.X, (int)position.Y, (int)scale.X, (int)scale.Y), 1, room, movement, deacceleration, spriteKey, pixel, color, (float)(scale.X / scale.Y), duration, true, true, true);
+                room.gameObjects.Add(particle);
+            }
+        }
+
         /// <summary>
         /// Shoots a bullet with a chosen color. Returns the ID of a potential gameObject.
         /// Returns -1 if the bullet hits a platform or gets out of range.
@@ -1094,7 +1113,7 @@ namespace GymnasieArbete
                         }
                     }
                 }
-                if (spriteEffect == SpriteEffects.FlipHorizontally)
+                else
                 {
                     if (leftHand)
                     {
@@ -1134,6 +1153,7 @@ namespace GymnasieArbete
                         if (attackTimer >= (float)(60 / (float)(AttackSpeed * 0.5f)))
                         {
                             attackTimer = 0;
+                            ShootParticleStatic(rand, room, ShootOrigin, -20, 30, 15 * player.direction, new Vector2(0.94f, 0.94f), new Vector2(3, 1), rand.Next(2, 3), 7, Color.Red);
                             room.gameObjects.Add(new SplitBall(room.gameObjects.Count, new Animation("Red_Attack1_1"), ShootOrigin, new Vector2(rand.Next(17, 22) * player.direction, rand.Next(-9, -7)), Damage, 1, 2, room, true, false, true, false, 0, true, spriteEffect, attackable, true, true));
                         }
                     }
@@ -1147,6 +1167,7 @@ namespace GymnasieArbete
                         if (attackTimer >= (float)(60 / (float)(AttackSpeed * 0.5f)))
                         {
                             attackTimer = 0;
+                            ShootParticleStatic(rand, room, ShootOrigin, -20, 30, 15 * player.direction, new Vector2(0.94f, 0.94f), new Vector2(3, 1), rand.Next(2, 3), 7, Color.Red);
                             room.gameObjects.Add(new SplitBall(room.gameObjects.Count, new Animation("Red_Attack1_1"), ShootOrigin, new Vector2(rand.Next(17, 22) * player.direction, rand.Next(-9, -7)), Damage, 1, 2, room, true, false, true, false, 0, true, spriteEffect, attackable, true, false));
                         }
                     }
@@ -1160,6 +1181,7 @@ namespace GymnasieArbete
                         if (attackTimer >= (float)(60 / (float)(AttackSpeed * 0.5f)))
                         {
                             Animation ani = new Animation(spr_plasmaBall);
+                            ShootParticleStatic(rand, room, ShootOrigin, -20, 30, 15 * player.direction, new Vector2(0.94f, 0.94f), new Vector2(3, 1), rand.Next(2, 3), 7, Color.Red);
                             room.gameObjects.Add(new Projectile(room.gameObjects.Count, ani, ShootOrigin - new Vector2(0, SpriteHandler.sprites[spr_plasmaBall].height / 3), new Vector2(rand.Next(17, 22) * player.direction, rand.Next(-9, -7)), Damage, 1, 2, room, true, false, true, false, 0, true, spriteEffect, attackable, true, 0f, 0.8f, 1f));
                             attackTimer = 0;
                         }
@@ -1300,6 +1322,7 @@ namespace GymnasieArbete
                         }
                         if (attackTimer >= (float)(60 / (float)(AttackSpeed * 0.1f)))
                         {
+                            ShootParticleStatic(rand, room, ShootOrigin, -20, 30, 15 * player.direction, new Vector2(0.94f, 0.94f), new Vector2(3, 1), rand.Next(3, 7), 7, Color.Red);
                             room.gameObjects.Add(new ExplodingBall(room.gameObjects.Count, new Animation(spr_plasmaUlt), ShootOrigin, new Vector2(rand.Next(45, 50) * player.direction, rand.Next(-9, -8)), Damage, 2, 60, room, true, false, true, true, 0f, true, spriteEffect, attackable, true));
                             room.gameObjects.Add(new ExplodingBall(room.gameObjects.Count, new Animation(spr_plasmaUlt), ShootOrigin, new Vector2(rand.Next(45, 50) * player.direction, rand.Next(-9, -8)), Damage, 2, 60, room, true, false, true, true, 0f, true, spriteEffect, attackable, true));
                             attackTimer = 0;
@@ -1313,6 +1336,7 @@ namespace GymnasieArbete
                         }
                         if (attackTimer >= (float)(60 / (float)(AttackSpeed * 0.1f)))
                         {
+                            ShootParticleStatic(rand, room, ShootOrigin, -20, 30, 15 * player.direction, new Vector2(0.94f, 0.94f), new Vector2(3, 1), rand.Next(3, 5), 7, Color.Red);
                             room.gameObjects.Add(new ExplodingBall(room.gameObjects.Count, new Animation(spr_plasmaUlt), ShootOrigin, new Vector2(rand.Next(45, 50) * player.direction, rand.Next(-9, -8)), Damage, 2, 60, room, true, false, true, true, 0f, true, spriteEffect, attackable, true));
                             attackTimer = 0;
                         }
@@ -1688,11 +1712,11 @@ namespace GymnasieArbete
                     {
                         if (player.state == Player.State.running || player.state == Player.State.back)
                         {
-                            ShootOrigin = HandOrigin(player.position, 50 + 16, 50) + player.textureOffset;
+                            ShootOrigin = HandOrigin(player.position, 50 + 3, 53) + player.textureOffset;
                         }
                         else
                         {
-                            ShootOrigin = HandOrigin(player.position, 50 + 16, 30) + player.textureOffset;
+                            ShootOrigin = HandOrigin(player.position, 50 + 15, 33) + player.textureOffset;
                         }
                     }
                     else
@@ -1713,11 +1737,11 @@ namespace GymnasieArbete
                     {
                         if (player.state == Player.State.running || player.state == Player.State.back)
                         {
-                            ShootOrigin = HandOrigin(player.position, 50 + 16, 53) + player.textureOffset;
+                            ShootOrigin = HandOrigin(player.position, 50 - 55, 53) + player.textureOffset;
                         }
                         else
                         {
-                            ShootOrigin = HandOrigin(player.position, 50 - 75, 33) + player.textureOffset;
+                            ShootOrigin = HandOrigin(player.position, 50 - 65, 36) + player.textureOffset;
                         }
                     }
                     else
@@ -1748,6 +1772,7 @@ namespace GymnasieArbete
                         int attackspdDeviation = 2;
                         if (attackTimer >= (float)(60 / (float)(AttackSpeed * attackspdDeviation)))
                         {
+                            ShootParticleDynamic(rand, room, ShootOrigin - new Vector2(5 * player.direction, 0), new Vector2(rand.Next(-2, 3) * player.direction, rand.Next(-7, -4)), new Vector2(1, 1), new Vector2(2, 2), "", true, 1, 30, Color.Gray);
                             ShootBullet(room, ShootOrigin, new Vector2(player.direction, 0), Damage, 1000, room.platforms, room.gameObjects, Color.Yellow, player);
                             attackTimer = 0;
                         }
@@ -1767,6 +1792,8 @@ namespace GymnasieArbete
                                 attack1Counter++;
                                 if (attack1Counter % 7 == 0)
                                 {
+
+                                    ShootParticleDynamic(rand, room, ShootOrigin - new Vector2(5 * player.direction, 0), new Vector2(rand.Next(-2, 3) * player.direction, rand.Next(-7, -4)), new Vector2(1, 1), new Vector2(2, 2), "", true, 1, 30, Color.Gray);
                                     ShootBullet(room, ShootOrigin, new Vector2(player.direction, 0), Damage, 1000, room.platforms, room.gameObjects, Color.Yellow, player);
                                 }
                                 if (attack1Counter == 21)
@@ -1783,6 +1810,7 @@ namespace GymnasieArbete
                         if (attackTimer >= (float)(60 / (float)(AttackSpeed * attackspdDeviation)))
                         {
                             attackTimer = 0;
+                            ShootParticleDynamic(rand, room, ShootOrigin - new Vector2(5 * player.direction, 0), new Vector2(rand.Next(-2, 3) * player.direction, rand.Next(-7, -4)), new Vector2(1, 1), new Vector2(2, 2), "", true, 1, 30, Color.Gray);
                             ShootBullet(room, ShootOrigin, new Vector2(player.direction, 0), Damage, 1000, room.platforms, room.gameObjects, Color.Yellow, player);
                         }
                     }

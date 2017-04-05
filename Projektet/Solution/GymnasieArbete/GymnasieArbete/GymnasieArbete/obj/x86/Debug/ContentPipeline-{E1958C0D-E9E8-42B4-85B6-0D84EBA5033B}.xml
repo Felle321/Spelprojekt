@@ -7,8 +7,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Debug\Content\fontDebug.xnb</Output>
-      <Time>2016-09-09T16:21:22+02:00</Time>
+      <Output>C:\Users\Rau\Documents\GitHub\Spelprojekt\Projektet\Solution\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Debug\Content\fontDebug.xnb</Output>
+      <Time>2017-04-04T13:46:01.0405078+02:00</Time>
     </Item>
     <Item>
       <Source>fontDamage.spritefont</Source>
@@ -16,8 +16,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Debug\Content\fontDamage.xnb</Output>
-      <Time>2017-01-17T11:10:34+01:00</Time>
+      <Output>C:\Users\Rau\Documents\GitHub\Spelprojekt\Projektet\Solution\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Debug\Content\fontDamage.xnb</Output>
+      <Time>2017-04-04T13:46:01.0389976+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -26,10 +26,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbeteContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\felix.dunmar\Dropbox\Rau\Programmering\Felix\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Rau\Documents\GitHub\Spelprojekt\Projektet\Solution\GymnasieArbete\GymnasieArbete\GymnasieArbeteContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Rau\Documents\GitHub\Spelprojekt\Projektet\Solution\GymnasieArbete\GymnasieArbete\GymnasieArbete\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Rau\Documents\GitHub\Spelprojekt\Projektet\Solution\GymnasieArbete\GymnasieArbete\GymnasieArbete\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Rau\Documents\GitHub\Spelprojekt\Projektet\Solution\GymnasieArbete\GymnasieArbete\GymnasieArbete\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -58,7 +58,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2016-10-04T09:39:29.1702573+02:00</Value>
+        <Value>2016-09-27T15:38:23.6879443+02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

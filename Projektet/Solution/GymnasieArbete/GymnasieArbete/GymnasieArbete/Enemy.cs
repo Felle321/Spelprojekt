@@ -427,10 +427,8 @@ namespace GymnasieArbete
             public Test(Vector2 position, Room room, int level, Animation animation, float hitboxDamage, int hitboxCooldown) : base(position, room, level, animation, hitboxDamage, hitboxCooldown)
             {
                 movementMax = new Vector2(7, 35);
-                walkingSpeed = 4;
             }
         }
-
         public class GroundTroop : Enemy
         {
             public string spr_walking, spr_idle, spr_shooting, spr_charging, spr_bullet, spr_chargedBullet, spr_fall, spr_jump, spr_jumping;
@@ -513,11 +511,11 @@ namespace GymnasieArbete
 
                 for (int i = 0; i < room.platforms.Count; i++)
                 {
-                    if (room.platforms[i].rectangle.Intersects(Game1.CreateRectangle(room.player.Rectangle.Center, EyePos.ToPoint())))
-                        if (Game1.LineIntersectsRect(EyePos, room.player.Rectangle.Center.ToVector2(), room.platforms[i].rectangle))
+                    if (room.platforms[i].rectangle.Intersects(Game1.CreateRectangle(room.player.Rectangle.Center, Origin.ToPoint())))
+                        if (Game1.LineIntersectsRect(Origin, room.player.Rectangle.Center.ToVector2(), room.platforms[i].rectangle))
                             return false;
                 }
-                if (Game1.LineIntersectsRect(EyePos, new Vector2(room.player.Rectangle.Center.ToVector2().X, EyePos.Y), room.player.Rectangle))
+                if (Game1.LineIntersectsRect(Origin, new Vector2(room.player.Rectangle.Center.ToVector2().X, Origin.Y), room.player.Rectangle))
                 {
                     return true;
                 }
@@ -723,12 +721,12 @@ namespace GymnasieArbete
                             movement.Y = 5;
                     }
 
-                    if (Rectangle.Intersects(room.gameObjects[0].Rectangle))
+                    if (Rectangle.Intersects(room.player.Rectangle))
                     {
                         live = false;
                         remove = true;
 
-                        room.gameObjects[0].Buffs.Add(new Buff(1f, 0.7f, 1f, 30, "SnowSlow", false));
+                        room.player.Buffs.Add(new Buff(1f, 0.4f, 1f, 30, "SnowSlow", false));
                     }
                     else if (rand.Next(0, 1000) < 20 && !onGround)
                     {
@@ -776,6 +774,7 @@ namespace GymnasieArbete
                         }
                         jumpTimer++;
                         if (jumping.animationEnd) { jumping.speed = 0; }
+                        if (jumpTimer >= 30) { base.Update(room, rand); }
                     }
                     if (canAttack)
                     {
@@ -1090,7 +1089,7 @@ namespace GymnasieArbete
                             {
                                 if (canAttack && shootingTimer > 60)
                                 {
-                                    state = State.shooting;
+                                    state = State.attacking;
                                     if ((shootLeft.currentFrame == shootLeft.framesTotal - 1 || shootRight.currentFrame == shootRight.framesTotal - 1))
                                     {
                                         if (direction > 0)
@@ -1126,7 +1125,6 @@ namespace GymnasieArbete
                             }
                             shootingTimer++;
                         }
-
                     }
                     else
                     {
@@ -1378,8 +1376,7 @@ namespace GymnasieArbete
                 {
                     if (!jumpPause)
                     {
-                        if (!canAttack)
-                            base.Update(room, rand);
+                        base.Update(room, rand);
 
                         lavaCharge++;
                         if (lavaCharge >= 150 && !canAttack)

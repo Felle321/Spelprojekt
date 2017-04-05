@@ -313,7 +313,7 @@ namespace GymnasieArbete
 
             SpriteHandler.AddSprite("overlay_damage", "GUI", "overlay_damage", GraphicsDevice);
             SpriteHandler.sprites["overlay_damage"].HUD = true;
-
+            SpriteHandler.AddSprite("pixel", @"particles", "pixel", GraphicsDevice);
             SpriteHandler.AddSprite("door_light", "Door", "door_light", GraphicsDevice);
             SpriteHandler.AddSprite("door_lamp", "Door", "door_lamp", GraphicsDevice);
             SpriteHandler.AddSprite("door_lampLight", "Door", "door_lampLight", GraphicsDevice);
